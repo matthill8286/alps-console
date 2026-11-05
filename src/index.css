@@ -1,0 +1,157 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #1d1d1f;
+  background: #f5f5f7;
+}
+body {
+  margin: 0;
+}
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 20px;
+  background: #12263f;
+  color: #fff;
+}
+.app-header h1 {
+  font-size: 18px;
+  margin: 0;
+}
+.app-header label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(320px, 2fr);
+  gap: 16px;
+  padding: 16px;
+  align-items: start;
+}
+.panel {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+}
+.panel h2 {
+  margin-top: 0;
+  font-size: 16px;
+}
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.filters label {
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  transition: opacity 120ms;
+}
+th,
+td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid #e5e5ea;
+}
+tr[aria-selected='true'] {
+  background: #e8f0fe;
+}
+.is-refreshing {
+  opacity: 0.6;
+}
+.mono {
+  font-family: ui-monospace, monospace;
+}
+.link {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: #0b57d0;
+  cursor: pointer;
+  text-decoration: underline;
+  font: inherit;
+}
+.state {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.policy {
+  border-left: 4px solid;
+  padding-left: 6px;
+}
+.muted {
+  color: #6e6e73;
+}
+.error {
+  color: #b3261e;
+}
+.warning {
+  background: #fff4e5;
+  border: 1px solid #f0c27a;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+}
+.warning p,
+.warning ul {
+  margin: 4px 0;
+}
+.unavailable {
+  color: #8a5a00;
+}
+.list-footer,
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+}
+.pager {
+  justify-content: flex-end;
+}
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 16px;
+  font-size: 14px;
+}
+.facts dt {
+  color: #6e6e73;
+}
+.facts dd {
+  margin: 0;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+}
+.history-list li {
+  display: grid;
+  gap: 2px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e5ea;
+}
